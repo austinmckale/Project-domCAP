@@ -28,10 +28,7 @@ from colorama import Fore, Back, Style
 from colorama import init
 import pandas
 
-f=open('C:\Project domCAP\information.txt')
-lines=f.readlines()
-catchalll = lines[0]
-passs = lines[1]
+
 
 print("Welcome to Dominus Inc Random Activity for Gmails")
 time.sleep(1)
