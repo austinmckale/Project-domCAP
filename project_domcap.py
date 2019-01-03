@@ -90,7 +90,6 @@ def docs():
     #makes a new google docs
     browser.execute_script("window.open('');")
     time.sleep(2)
-    browser.switch_to.window(browser.window_handles[3])
     browser.get("http://google.com")
     search = browser.find_element_by_name('q')
     text = "google docs"
