@@ -79,10 +79,6 @@ def search():
     search = browser.find_element_by_name('q')
     search.send_keys(random_searches)
     search.send_keys(Keys.RETURN)
-    my_search_list = WebDriverWait(browser, 10).until(EC.visibility_of_all_elements_located((By.XPATH, "//h3[@class='r']/a[not(ancestor::div[@class='xIleA'])]")))
-    myRandomNumber = randint(0, len(my_search_list))
-    print(myRandomNumber)
-    my_search_list[myRandomNumber].click()
     time.sleep(random.randint(1,500))
     browser.get('http://www.google.com')
 
