@@ -71,8 +71,7 @@ def login():
     final.click()
 
 def search():
-    random_searches = "cool"
-    
+    random_searches = "cool" # add searches here if you want more
     browser.get('http://www.google.com')
     search = browser.find_element_by_name('q')
     search.send_keys(random_searches)
